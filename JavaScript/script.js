@@ -45,7 +45,39 @@ function checkAnswer(){
             document.getElementById("result").innerHTML = "Incorrect";
         }
     }
+
+    if(randomQuestion == 0){
+        if(answer == 1){
+            document.getElementById("result").innerHTML = "Correct";
+        }else{
+            document.getElementById("result").innerHTML = "Incorrect";
+        }
     }
+
+    if(randomQuestion == 2){
+        if(answer == 0){
+            document.getElementById("result").innerHTML = "Correct";
+        }else{
+            document.getElementById("result").innerHTML = "Incorrect";
+        }
+    }
+    if(randomQuestion == 3){
+        if(answer == 3){
+            document.getElementById("result").innerHTML = "Correct";
+        }else{
+            document.getElementById("result").innerHTML = "Incorrect";
+        }
+    }
+    if(randomQuestion == 4){
+        if(answer == 2){
+            document.getElementById("result").innerHTML = "Correct";
+        }else{
+            document.getElementById("result").innerHTML = "Incorrect";
+        }
+    }
+    }
+
+    
 
 }
 
