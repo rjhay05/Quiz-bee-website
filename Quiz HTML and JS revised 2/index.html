@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS link -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- link CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff&display=swap" rel="stylesheet">
+
+     <script src="https://kit.fontawesome.com/0330a44917.js" crossorigin="anonymous"></script>
+    <title>Quiz</title>
+</head>
+<style>
+    img{
+        width: 90px;
+        height: 90px;
+    }
+</style>
+<body class="bg-dark">
+
+    <div class="has-bg-image vw-100" style="
+    background-image: url(/istockphoto-1341910469-170667a.jpg);
+    height: 200vh;">
+
+    <nav class="navbar navbar-expand-lg bg-dark p-4 mt-0 my-5">
+
+        <div class="align-self-start">
+            <h1 style="font-family: 'Silkscreen', cursive;" class="display-1 d-inline-block text-warning">Quiz Bee</h1><i class="fa-brands fa-forumbee p-4 text-warning"></i>
+        </div>
+
+    </nav>
+
+  <div style="background-color: #595260;" class="container bg-dark w-75 border rounded">
+    <h1 style="font-family: 'Silkscreen', cursive;" id="title" class="bg-warning m-2 container">Question<img class="img-thumbnail border-1 rounded-5" src="/bee3.jpg" alt="PIC"></h1>
+    
+
+    <!-- quiz-container -->
+    <div id="quiz-container" class="container bg-warning m-2">
+        <!-- question container -->
+        <div class="questions">
+            <h2 style="font-family: 'DynaPuff', cursive;" id="question"></h2>
+            <ol type="A">
+                <li style="font-family: 'Silkscreen', cursive;" class="option"><span class="text text-dark text-center fs-4 form-control border-dark w-50 " id="option0" onclick="calcScore(this)"></span></li>
+                <li style="font-family: 'Silkscreen', cursive;" class="option"><span class="text text-dark text-center fs-4 form-control border-dark w-50 " id="option1" onclick="calcScore(this)"></span></li>
+                <li style="font-family: 'Silkscreen', cursive;" class="option"><span class="text text-dark text-center fs-4 form-control border-dark w-50 " id="option2" onclick="calcScore(this)"></span></li>
+                <li style="font-family: 'Silkscreen', cursive;" class="option"><span class="text text-dark text-center fs-4 form-control border-dark w-50 " id="option3" onclick="calcScore(this)"></span></li>
+            </ol>
+            <h4 style="font-family: 'DynaPuff', cursive;" id="stat"></h4>
+            
+        </div>
+
+        <div class="buttons">
+            <button type="button" class="next btn btn-dark m-2">Next</button>
+        </div>
+
+    </div>
+
+    <!-- scoreboard section -->
+    <div id="scoreboard" class="container bg-warning m-2">
+      
+        <h2 style="font-family: 'DynaPuff', cursive;" id="score-title" class="m-2">Your Score:</h2>
+        <h2 style="font-family: 'Silkscreen', cursive;" id="score"></h2>
+        <button class="m-2 btn btn-dark" type="button" id="score-btn" onclick="backToQuiz()">Back to Quiz</button>
+        <button class="m-2 btn btn-dark" type="button" id="check-answer" onclick="checkAnswer()">Check Answers</button>
+    </div>
+
+    <!-- answers section -->
+    <div id="answerBank" class="container bg-warning m-2">
+        <h2 style="font-family: 'DynaPuff', cursive;" class="m-2">Answers :</h2>
+        <ol style="font-family: 'Silkscreen', cursive;" type="1" id="answers">
+
+        </ol>
+        <button class="m-2 btn btn-dark" type="button" id="score-btn" onclick="backToQuiz()">Back to Quiz</button>
+    </div>
+
+</div>    
+<!-- JS link -->
+<script src="js/index.js"></script>
+<!-- script for js -->
+<script src="js/bootstrap.bundle.min.js"></script>     
+</body>
+</html>
